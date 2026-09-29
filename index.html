@@ -1,287 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - QrOne</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f8f9fa;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-
-        header {
-            background: linear-gradient(135deg, #4D8FFF, #005FF9);
-            color: white;
-            padding: 40px 20px;
-            text-align: center;
-            margin-bottom: 40px;
-        }
-
-        header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-        }
-
-        header p {
-            opacity: 0.9;
-            font-size: 1.1rem;
-        }
-
-        .card {
-            background: white;
-            border-radius: 12px;
-            padding: 30px;
-            margin-bottom: 24px;
-            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
-        }
-
-        h2 {
-            color: #005FF9;
-            font-size: 1.5rem;
-            margin-bottom: 16px;
-            padding-bottom: 8px;
-            border-bottom: 2px solid #e9ecef;
-        }
-
-        h3 {
-            color: #333;
-            font-size: 1.2rem;
-            margin: 20px 0 12px 0;
-        }
-
-        p {
-            margin-bottom: 12px;
-            color: #555;
-        }
-
-        ul {
-            margin: 12px 0 12px 24px;
-            color: #555;
-        }
-
-        li {
-            margin-bottom: 8px;
-        }
-
-        .highlight {
-            background-color: #e7f1ff;
-            padding: 16px;
-            border-radius: 8px;
-            border-left: 4px solid #005FF9;
-            margin: 16px 0;
-        }
-
-        .highlight p {
-            margin-bottom: 0;
-        }
-
-        .last-updated {
-            text-align: center;
-            color: #888;
-            font-size: 0.9rem;
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid #e9ecef;
-        }
-
-        a {
-            color: #005FF9;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        footer {
-            text-align: center;
-            padding: 30px;
-            color: #888;
-            font-size: 0.9rem;
-        }
-
-        @media (max-width: 600px) {
-            header h1 {
-                font-size: 1.8rem;
-            }
-
-            .card {
-                padding: 20px;
-            }
-
-            h2 {
-                font-size: 1.3rem;
-            }
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>QrOne Privacy Policy</title>
+<meta name="description" content="Privacy Policy for QrOne (QR code and barcode scanner and generator), published by Sagar Singh (developer &ldquo;Myx&rdquo;).">
+<style>
+  :root {
+    --accent: #4f46e5;
+    --bg: #f6f7f9;
+    --card: #ffffff;
+    --text: #16181d;
+    --muted: #5f6572;
+    --border: #e4e6eb;
+    --glance: color-mix(in srgb, var(--accent) 8%, var(--card));
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --accent: #818cf8;
+      --bg: #0f1115;
+      --card: #171a20;
+      --text: #e8eaee;
+      --muted: #9aa1ad;
+      --border: #272b33;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 16px; }
+  header { padding: 48px 0 24px; }
+  .app { color: var(--accent); font-weight: 700; font-size: 15px; letter-spacing: .02em; text-transform: uppercase; margin: 0; }
+  h1 { font-size: clamp(30px, 6vw, 40px); line-height: 1.15; margin: 6px 0 8px; letter-spacing: -.02em; }
+  .meta { color: var(--muted); margin: 0; font-size: 15px; }
+  .glance { background: var(--glance); border: 1px solid var(--border); border-left: 4px solid var(--accent);
+             border-radius: 12px; padding: 18px 22px; margin: 8px 0 28px; }
+  .glance h2 { font-size: 17px; margin: 0 0 6px; }
+  .glance ul { margin: 0; }
+  nav { margin: 0 0 28px; }
+  nav ol { columns: 2; column-gap: 32px; margin: 0; padding-left: 22px; color: var(--muted); font-size: 15px; }
+  @media (max-width: 560px) { nav ol { columns: 1; } }
+  section { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 22px 24px; margin-bottom: 14px; }
+  h2 { font-size: 20px; margin: 0 0 8px; letter-spacing: -.01em; }
+  h3 { font-size: 16px; margin: 16px 0 4px; }
+  p { margin: 8px 0; }
+  ul { margin: 8px 0; padding-left: 22px; }
+  li { margin: 4px 0; }
+  a { color: var(--accent); text-underline-offset: 2px; }
+  .contact-btn { display: inline-block; margin-top: 6px; padding: 10px 18px; border-radius: 999px; background: var(--accent);
+                  color: #fff; font-weight: 600; text-decoration: none; }
+  @media (prefers-color-scheme: dark) { .contact-btn { color: #0f1115; } }
+  footer { color: var(--muted); font-size: 14px; padding: 20px 0 48px; text-align: center; }
+  footer a { color: inherit; }
+</style>
 </head>
-
 <body>
-    <header>
-        <h1>🔳 QrOne</h1>
-        <p>Privacy Policy</p>
-    </header>
+<div class="wrap">
+  <header>
+    <p class="app">QrOne</p>
+    <h1>Privacy Policy</h1>
+    <p class="meta">Effective 29 September 2026 &middot; Sagar Singh (developer &ldquo;Myx&rdquo;)</p>
+  </header>
 
-    <div class="container">
-        <div class="card">
-            <h2>Introduction</h2>
-            <p>Welcome to QrOne ("we," "our," or "us"). We are committed to protecting your privacy and ensuring the
-                security of your personal information. This Privacy Policy explains how we collect, use, disclose, and
-                safeguard your information when you use our QrOne mobile application (the "App").</p>
-            <p>By using QrOne, you agree to the collection and use of information in accordance with this policy. If you
-                do not agree with the terms of this privacy policy, please do not use the App.</p>
-        </div>
+  <div class="glance">
+    <h2>At a glance</h2>
+    <ul><li>Scanning and text recognition happen on your device. Camera images are not uploaded.</li><li>Without an account, your history is stored only on your phone.</li><li>With an account, your history and dynamic QR codes are stored in the cloud.</li><li>QrOne shows Google AdMob ads.</li></ul>
+  </div>
 
-        <div class="card">
-            <h2>Information We Collect</h2>
+  <nav aria-label="Contents"><ol><li><a href="#who-is-responsible">Who is responsible</a></li><li><a href="#camera-and-scanning">Camera and scanning</a></li><li><a href="#history">History</a></li><li><a href="#account-optional">Account (optional)</a></li><li><a href="#dynamic-qr-codes">Dynamic QR codes</a></li><li><a href="#advertising">Advertising</a></li><li><a href="#other-permissions">Other permissions</a></li><li><a href="#service-providers">Service providers</a></li><li><a href="#how-long-data-is-kept-and-how-to-delete-it">How long data is kept and how to delete it</a></li><li><a href="#your-rights-and-choices">Your rights and choices</a></li><li><a href="#security">Security</a></li><li><a href="#children">Children</a></li><li><a href="#where-your-data-is-processed">Where your data is processed</a></li><li><a href="#changes-to-this-policy">Changes to this policy</a></li><li><a href="#contact">Contact</a></li></ol></nav>
 
-            <h3>1. Information You Provide</h3>
-            <ul>
-                <li><strong>Account Information:</strong> When you create an account, we collect your name, email
-                    address, and password.</li>
-                <li><strong>QR Code Data:</strong> The content you scan or generate using our App, including URLs, text,
-                    contact information, WiFi credentials, and other QR code content.</li>
-            </ul>
+  <main>
+    <section id="who-is-responsible">
+      <h2>1. Who is responsible</h2>
+      <p>QrOne is an app for scanning and creating QR codes and barcodes. It is developed and published by <strong>Sagar Singh</strong>, an individual developer based in India, under the developer name <strong>&ldquo;Myx&rdquo;</strong>. QrOne is not published by a company.</p><p>In this policy, &ldquo;I&rdquo;, &ldquo;me&rdquo; and &ldquo;my&rdquo; mean Sagar Singh. I decide how the information described here is used and I am responsible for it. Under India&rsquo;s Digital Personal Data Protection Act, 2023 I am the &ldquo;data fiduciary&rdquo;, and under the GDPR I am the &ldquo;data controller&rdquo;. I am also the grievance contact for QrOne.</p>
+    </section>
+    <section id="camera-and-scanning">
+      <h2>2. Camera and scanning</h2>
+      <p>QrOne uses the camera to scan codes and, optionally, to recognise text. Both run on your device using Google ML Kit, and camera images are not sent to me. You can also pick an image from your gallery to scan.</p>
+    </section>
+    <section id="history">
+      <h2>3. History</h2>
+      <ul><li><strong>Without an account:</strong> your last 100 scanned and generated items are stored in a local database on your phone.</li><li><strong>With an account:</strong> your history is stored in Firebase Cloud Firestore so you can see it on other devices. Only your account can read it.</li></ul><p>History can include whatever the codes contain, such as links, text, contact cards, Wi-Fi names and passwords, and calendar events.</p>
+    </section>
+    <section id="account-optional">
+      <h2>4. Account (optional)</h2>
+      <p>You can create an account with your name, email address and password. Accounts are handled by Firebase Authentication, and passwords are never visible to me.</p>
+    </section>
+    <section id="dynamic-qr-codes">
+      <h2>5. Dynamic QR codes</h2>
+      <p>If you create a dynamic QR code, its destination link, your account ID, a scan count and the time of the last scan are stored in Firestore. When someone scans the code, a redirect service hosted on Firebase counts the scan and forwards them to your link. I do not record who scanned it. The hosting provider may keep standard request logs, including IP address, for security and operation.</p>
+    </section>
+    <section id="advertising">
+      <h2>6. Advertising</h2>
+      <p>QrOne shows ads from Google AdMob. AdMob may use your device&rsquo;s advertising ID, IP address and device information to show and measure ads, including personalised ads. On iOS it follows your App Tracking Transparency choice. You can limit personalised ads in your device settings or at <a href="https://adssettings.google.com" target="_blank" rel="noopener">Google Ads Settings</a>.</p>
+    </section>
+    <section id="other-permissions">
+      <h2>7. Other permissions</h2>
+      <ul><li><strong>Photos:</strong> to save generated codes to your gallery and to scan images you pick.</li><li><strong>Wi-Fi:</strong> to connect to a network from a scanned Wi-Fi QR code, only when you choose to.</li></ul>
+    </section>
+    <section id="service-providers">
+      <h2>8. Service providers</h2>
+      <ul><li><strong><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase</a></strong>: authentication, cloud database, hosting and the dynamic QR redirect service, provided by Google.</li><li><strong><a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google AdMob</a></strong>: advertising.</li><li><strong><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google</a></strong>: on-device ML Kit scanning and text recognition, and Google Play distribution.</li><li><strong><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple</a></strong>: App Store distribution.</li></ul><p>I do not sell, trade or rent your personal information. I may disclose it if the law requires.</p>
+    </section>
+    <section id="how-long-data-is-kept-and-how-to-delete-it">
+      <h2>9. How long data is kept and how to delete it</h2>
+      <ul><li>Local history stays until you delete items, clear history or uninstall the app.</li><li>Cloud history and dynamic codes are kept while your account exists. You can delete individual items and dynamic codes in the app.</li><li>You can delete your account in <em>Profile &rarr; Delete Account</em>. To make sure your cloud history and dynamic codes are removed too, delete them first or <a href="mailto:sagarrawatuk@gmail.com?subject=QrOne%20privacy">contact me</a> and I will erase them.</li></ul>
+    </section>
+    <section id="your-rights-and-choices">
+      <h2>10. Your rights and choices</h2>
+      <p>You can view and delete your history, manage dynamic codes, revoke camera and photo permissions and delete your account inside the app.</p><p>Depending on where you live, you may also have the right to:</p><ul><li>access the personal data I hold about you and get a copy in a portable format;</li><li>correct information that is wrong or incomplete;</li><li>have your data erased;</li><li>restrict or object to certain processing;</li><li>withdraw consent where processing is based on consent;</li><li>nominate someone to exercise your rights if you die or become unable to (India).</li></ul><p>To make a request, <a href="mailto:sagarrawatuk@gmail.com?subject=QrOne%20privacy">contact me</a>. I will reply within 30 days and may need to confirm that the data is yours first. If you are not satisfied with my answer, you can complain to the Data Protection Board of India or, in the EEA or UK, to your local data protection authority.</p>
+    </section>
+    <section id="security">
+      <h2>11. Security</h2>
+      <p>Cloud data is encrypted in transit, and Firestore security rules limit each user&rsquo;s history and dynamic codes to that user. No system is completely secure, but if a breach affects your data I will notify you and the relevant authorities where the law requires.</p>
+    </section>
+    <section id="children">
+      <h2>12. Children</h2>
+      <p>QrOne is not intended for anyone under 13. I do not knowingly collect personal information from anyone under 13. If you believe a child has provided information through QrOne, <a href="mailto:sagarrawatuk@gmail.com?subject=QrOne%20privacy">contact me</a> and I will delete it.</p>
+    </section>
+    <section id="where-your-data-is-processed">
+      <h2>13. Where your data is processed</h2>
+      <p>I am based in India. The service providers named above may store or process data in other countries, including the United States and the European Union. Where data leaves the EEA or UK, the transfer relies on safeguards such as the European Commission&rsquo;s Standard Contractual Clauses in the provider&rsquo;s terms.</p>
+    </section>
+    <section id="changes-to-this-policy">
+      <h2>14. Changes to this policy</h2>
+      <p>If I change this policy, I will update the date at the top of this page. For significant changes I will also let you know in QrOne before they take effect.</p>
+    </section>
+    <section id="contact">
+      <h2>15. Contact</h2>
+      <p>For questions about this policy, data requests or complaints, <a href="mailto:sagarrawatuk@gmail.com?subject=QrOne%20privacy">contact me by email</a>. I built the app, so I will answer your message myself.</p><p>Sagar Singh (developer &ldquo;Myx&rdquo;), India</p>
+    </section>
+    <section>
+      <a class="contact-btn" href="mailto:sagarrawatuk@gmail.com?subject=QrOne%20privacy">Contact us</a>
+    </section>
+  </main>
 
-            <h3>2. Automatically Collected Information</h3>
-            <ul>
-                <li><strong>Device Information:</strong> We may collect information about your mobile device, including
-                    device type, operating system, unique device identifiers, and mobile network information.</li>
-                <li><strong>Usage Data:</strong> Information about how you use the App, including scan history,
-                    generated codes, and feature usage patterns.</li>
-                <li><strong>Camera Access:</strong> The App requires camera access to scan QR codes and barcodes. Camera
-                    data is processed locally and is not transmitted to our servers.</li>
-            </ul>
-
-            <h3>3. Third-Party Services</h3>
-            <p>Our App uses the following third-party services that may collect information:</p>
-            <ul>
-                <li><strong>Firebase Authentication:</strong> For user account management and authentication.</li>
-                <li><strong>Cloud Firestore:</strong> For storing user data and scan history (for logged-in users).</li>
-                <li><strong>Google AdMob:</strong> For displaying advertisements within the App.</li>
-            </ul>
-        </div>
-
-        <div class="card">
-            <h2>How We Use Your Information</h2>
-            <p>We use the collected information for the following purposes:</p>
-            <ul>
-                <li><strong>Provide Services:</strong> To operate and maintain the App's functionality, including QR
-                    code scanning and generation.</li>
-                <li><strong>User Account:</strong> To create and manage your user account and sync your data across
-                    devices.</li>
-                <li><strong>History:</strong> To save and display your scan and generation history.</li>
-                <li><strong>Improvements:</strong> To understand how users interact with the App and improve our
-                    services.</li>
-                <li><strong>Advertising:</strong> To display relevant advertisements through Google AdMob.</li>
-                <li><strong>Communication:</strong> To send you updates, security alerts, and support messages.</li>
-            </ul>
-        </div>
-
-        <div class="card">
-            <h2>Data Storage and Security</h2>
-
-            <h3>Local Storage</h3>
-            <p>If you use the App without an account, your scan history and generated codes are stored locally on your
-                device using secure local storage (Hive database). This data remains on your device and is not
-                transmitted to our servers.</p>
-
-            <h3>Cloud Storage</h3>
-            <p>If you create an account and log in, your data is stored securely in Google Cloud Firestore. This allows
-                you to access your history across multiple devices.</p>
-
-            <div class="highlight">
-                <p><strong>Security Measures:</strong> We implement industry-standard security measures including
-                    encryption, secure authentication, and regular security audits to protect your data.</p>
-            </div>
-        </div>
-
-        <div class="card">
-            <h2>Advertising</h2>
-            <p>QrOne displays advertisements provided by Google AdMob. AdMob may collect and use certain information
-                about your device and usage patterns to display personalized ads.</p>
-            <p>For more information about how Google uses data, please visit: <a
-                    href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></p>
-            <p>You can opt out of personalized advertising by adjusting your device settings or visiting <a
-                    href="https://www.google.com/settings/ads" target="_blank">Google Ads Settings</a>.</p>
-        </div>
-
-        <div class="card">
-            <h2>Data Sharing and Disclosure</h2>
-            <p>We do not sell, trade, or rent your personal information to third parties. We may share your information
-                only in the following circumstances:</p>
-            <ul>
-                <li><strong>Service Providers:</strong> With trusted third-party service providers (Firebase, Google)
-                    who assist us in operating our App.</li>
-                <li><strong>Legal Requirements:</strong> When required by law, legal process, or government request.
-                </li>
-                <li><strong>Protection:</strong> To protect our rights, privacy, safety, or property, and that of our
-                    users.</li>
-                <li><strong>Consent:</strong> With your explicit consent for any other purpose.</li>
-            </ul>
-        </div>
-
-        <div class="card">
-            <h2>Your Rights and Choices</h2>
-            <p>You have the following rights regarding your personal information:</p>
-            <ul>
-                <li><strong>Access:</strong> You can access your scan history and account information within the App.
-                </li>
-                <li><strong>Delete:</strong> You can delete individual history items or clear all history from the App
-                    settings.</li>
-                <li><strong>Account Deletion:</strong> You can request deletion of your account by contacting us.</li>
-                <li><strong>Camera Permission:</strong> You can revoke camera permission at any time through your device
-                    settings.</li>
-                <li><strong>Ad Preferences:</strong> You can adjust your advertising preferences through your device
-                    settings.</li>
-            </ul>
-        </div>
-
-        <div class="card">
-            <h2>Children's Privacy</h2>
-            <p>QrOne is not intended for use by children under the age of 13. We do not knowingly collect personal
-                information from children under 13. If you are a parent or guardian and believe your child has provided
-                us with personal information, please contact us so we can take appropriate action.</p>
-        </div>
-
-        <div class="card">
-            <h2>Changes to This Privacy Policy</h2>
-            <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new
-                Privacy Policy on this page and updating the "Last Updated" date. You are advised to review this Privacy
-                Policy periodically for any changes.</p>
-        </div>
-
-        <div class="card">
-            <h2>Contact Us</h2>
-            <p>If you have any questions or concerns about this Privacy Policy or our data practices, please contact us:
-            </p>
-            <ul>
-                <li><strong>Email:</strong> <a href="mailto:sagarrawatuk2@gmail.com">sagarrawatuk2@gmail.com</a></li>
-            </ul>
-        </div>
-
-        <p class="last-updated">Last Updated: December 11, 2025</p>
-    </div>
-
-    <footer>
-        <p>© 2025 QrOne. All rights reserved.</p>
-    </footer>
+  <footer>
+    &copy; 2026 Sagar Singh &middot; Published as &ldquo;Myx&rdquo; &middot; <a href="mailto:sagarrawatuk@gmail.com?subject=QrOne%20privacy">Contact us</a>
+  </footer>
+</div>
 </body>
-
 </html>
